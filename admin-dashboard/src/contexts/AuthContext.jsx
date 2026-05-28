@@ -31,28 +31,29 @@ export const AuthProvider = ({ children }) => {
     
     return new Promise((resolve, reject) => {
       setTimeout(() => {
+        // Credenciales actualizadas para coincidir con el login
         const validCredentials = {
-          'admin@chiapas.gob.mx': { 
+          'admin@bachi.com': { 
             password: 'admin123',
             user: {
               id: 1,
               name: 'Carlos Hernández',
-              email: 'admin@chiapas.gob.mx',
+              email: 'admin@bachi.com',
               role: 'admin',
               avatar: null,
-              department: 'Dirección de Obras Públicas',
+              department: 'Administración',
               municipality: 'Tuxtla Gutiérrez'
             }
           },
-          'operador@chiapas.gob.mx': {
+          'operador@bachi.com': {
             password: 'operador123',
             user: {
               id: 2,
               name: 'Ana García',
-              email: 'operador@chiapas.gob.mx',
+              email: 'operador@bachi.com',
               role: 'operator',
               avatar: null,
-              department: 'Departamento de Alumbrado Público',
+              department: 'Operaciones',
               municipality: 'San Cristóbal'
             }
           }
